@@ -159,3 +159,6 @@ altair==4.2.0
 altair-viewer==0.4.0
 pandas==1.3.5
 vega-datasets==0.9.0
+
+# Needed by pdl-se
+gym==0.21.0
