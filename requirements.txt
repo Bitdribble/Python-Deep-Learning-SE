@@ -162,3 +162,5 @@ vega-datasets==0.9.0
 
 # Needed by pdl-se
 gym==0.21.0
+box2d-py==2.3.5
+pyglet==1.5.21

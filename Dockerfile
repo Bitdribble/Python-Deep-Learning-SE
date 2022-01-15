@@ -2,11 +2,17 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# pdl-se specific:
+# swig required by the gym[box2d] python module
+# python-opengl needed by keyboard_agent.py
+
 RUN apt update; apt install -y \
     emacs \
     pip \
     python3 \
+    python-opengl \
     sudo \
+    swig \
     tzdata \
     vim
 
