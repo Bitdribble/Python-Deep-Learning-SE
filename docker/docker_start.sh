@@ -15,7 +15,11 @@ fi
 # Create a brand new instance, but don't make it interactive yet
 docker run -it \
        --name $DOCKER_NAME \
+       --network="host" \
        -v ~/build:/build \
+       -v ~/.Xauthority:/root/.Xauthority \
+       -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
        -w $WORKING_DIR \
        --env PYTHONPATH=$WORKING_DIR \
+       --env DISPLAY=$DISPLAY \
        $DOCKER_IMAGE
