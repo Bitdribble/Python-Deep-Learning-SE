@@ -62,4 +62,16 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
 
+### Andrei's additions
+* To run the Jupyter notebooks on Colab, add the following to the top of your Jupyter notebook:
+```
+!rm -rf ldl
+!git clone https://github.com/Bitdribble/pdl-se.git
+%cd /content/pdl-se
+%pip install -r colab_requirements.txt
+%cd /content/pdl-se/<subfolder>
+
+```
+
+
 
